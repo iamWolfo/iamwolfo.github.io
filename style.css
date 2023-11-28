@@ -108,6 +108,11 @@ a:hover {
     color: #256CDC;
 }
 
+.noChange {
+  color: #555;
+  text-decoration: none;
+}
+
 .code {
     color: #555;
     font-family: monospace;
