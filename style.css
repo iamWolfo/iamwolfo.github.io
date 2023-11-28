@@ -14,13 +14,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-family: Montserrat, sans-serif;
-  height: 100%;
-  min-height: 100vh;
-  background-color: #ebf3ff;
-}
-
 .container {
   display: flex;
   flex-flow: column;
@@ -41,15 +34,20 @@ body {
 }
 
 /* --- this is the code you probably want ---- */
+body {
+    margin: 0;
+    background-color: #fbfbfb;
+    font-family: "Lato", sans-serif
+}
 
-h1 {
+.link1 {
   border-bottom: 3px solid #ff8cbc;
   font-size: 3em;
   transition: all 0.25s linear;
   position: relative;
 }
 
-h1:before {
+.link1:before {
   content: "";
   display: block;
   width: 100%;
@@ -64,14 +62,8 @@ h1:before {
 /*   will-change: transform; */
 }
 
-h1:hover:before {
+.link1:hover:before {
   transform: scale(1);
-}
-
-body {
-    margin: 0;
-    background-color: #fbfbfb;
-    font-family: "Lato", sans-serif
 }
 
 .navbar {
