@@ -45,6 +45,7 @@ body {
   font-size: 3em;
   transition: all 0.25s linear;
   position: relative;
+  text-decoration: none;
 }
 
 .link1:before {
@@ -59,11 +60,13 @@ body {
   transform-origin: left; 
   transform: scale(0);
   transition: 0.25s linear;
+  text-decoration: none;
 /*   will-change: transform; */
 }
 
 .link1:hover:before {
   transform: scale(1);
+  text-decoration: none;
 }
 
 .navbar {
