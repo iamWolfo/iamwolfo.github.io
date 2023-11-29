@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+::selection {
+  background-color: #18C4F2;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -108,7 +112,7 @@ a:hover {
     color: #1067CC;
 }
 
-a.noChange:hover {
+a.noChange {
   color: #555;
   text-decoration: none;
 }
