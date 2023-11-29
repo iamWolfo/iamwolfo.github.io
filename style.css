@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 ::selection {
   background-color: #18C4F2;
@@ -44,7 +45,7 @@ body {
     font-family: "Lato", sans-serif
 }
 
-.link1 {
+a.link1 {
   border-bottom: 3px solid #256CDC;
   font-size: 3em;
   transition: all 0.25s linear;
@@ -52,7 +53,7 @@ body {
   text-decoration: none;
 }
 
-.link1:before {
+a.link1:before {
   content: "";
   display: block;
   width: 100%;
@@ -68,7 +69,7 @@ body {
 /*   will-change: transform; */
 }
 
-.link1:hover:before {
+a.link1:hover:before {
   transform: scale(1);
   text-decoration: none;
 }
@@ -90,6 +91,28 @@ a.hover1:hover::before {
   height: 100%;
 }
 
+a.under1 {
+  text-decoration: none;
+  color: #0074D9;
+}
+
+a.under1::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a.under1:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
 
 .navbar {
     background-color: #2C2C2C;
