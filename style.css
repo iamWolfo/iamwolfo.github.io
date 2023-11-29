@@ -105,10 +105,10 @@ a {
 }
 
 a:hover {
-    color: #256CDC;
+    color: #1067CC;
 }
 
-.noChange {
+a.noChange:hover {
   color: #555;
   text-decoration: none;
 }
