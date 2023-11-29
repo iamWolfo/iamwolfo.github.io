@@ -73,6 +73,24 @@ body {
   text-decoration: none;
 }
 
+a.hover1::before {
+  content: '';
+  background-color: #186AF2;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+a.hover1:hover::before {
+  bottom: 0;
+  height: 100%;
+}
+
+
 .navbar {
     background-color: #2C2C2C;
     overflow: hidden;
