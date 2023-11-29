@@ -127,7 +127,7 @@ a.under1:before {
   }
 }
 
-body.navbar {
+.navbar {
     background-color: #2C2C2C;
     overflow: hidden;
     position: fixed;
@@ -136,7 +136,7 @@ body.navbar {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
 }
 
-body.navbtn {
+.navbtn {
     margin: 0px;
     float: left;
     display: block;
@@ -145,12 +145,12 @@ body.navbtn {
     text-decoration: none;
 }
 
-body.navbtnlink {
+.navbtnlink {
     display: block;
     margin: 1em;
 }
 
-body.content  {
+.content  {
     margin-top: 30px;
     padding-top: 30px;
     margin: 60px auto;
@@ -158,7 +158,7 @@ body.content  {
     word-spacing: 0.12em;
 }
 
-body.code {
+.code {
     color: #555;
     font-family: monospace;
 }
