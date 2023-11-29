@@ -7,14 +7,14 @@
   <body>
 
 <style>
-  a {
+  a.hover1 {
 	text-decoration: none;
 	color: #18272F;
 	font-weight: 700;
   position: relative;
 }
 
-a::before {
+a.hover1:before {
   content: '';
   background-color: hsla(196, 61%, 58%, .75);
   position: absolute;
@@ -26,7 +26,7 @@ a::before {
   transition: all .3s ease-in-out;
 }
 
-a:hover::before {
+a.hover1:hover:before {
   bottom: 0;
   height: 100%;
 }
@@ -42,7 +42,7 @@ body {
 
 </style>
 
-    <p><a href="#">TEST</a></p>
+    <p><a href="/" class="hover1">HOME</a></p>
     
   </body>
   
