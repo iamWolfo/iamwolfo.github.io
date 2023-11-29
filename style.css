@@ -20,9 +20,8 @@ html {
 }
 
 .container {
-  display: flex;
-  flex-flow: column;
-  width: 60%;
+  display: grid;
+  width: 80%;
   height: 100vh;
   margin: 0 auto;
   align-items: center;
@@ -74,12 +73,11 @@ a.link1:before {
   background-color: #39C828;
   position: absolute;
   left: 0;
-  bottom: -3px; /* this is to match where the border is */
+  bottom: -3px;
   transform-origin: left; 
   transform: scale(0);
   transition: 0.25s linear;
   text-decoration: none;
-/*   will-change: transform; */
 }
 
 a.link1:hover:before {
@@ -87,7 +85,7 @@ a.link1:hover:before {
   text-decoration: none;
 }
 
-a.hover1::before {
+a.hover1:before {
   content: '';
   background-color: #18B7F2;
   position: absolute;
@@ -99,7 +97,7 @@ a.hover1::before {
   transition: all .3s ease-in-out;
 }
 
-a.hover1:hover::before {
+a.hover1:hover:before {
   bottom: 0;
   height: 100%;
 }
@@ -127,7 +125,7 @@ a.under1::before {
   }
 }
 
-.navbar {
+body.navbar {
     background-color: #2C2C2C;
     overflow: hidden;
     position: fixed;
@@ -136,7 +134,7 @@ a.under1::before {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
 }
 
-.navbtn {
+body.navbtn {
     margin: 0px;
     float: left;
     display: block;
@@ -145,12 +143,12 @@ a.under1::before {
     text-decoration: none;
 }
 
-.navbtnlink {
+body.navbtnlink {
     display: block;
     margin: 1em;
 }
 
-.content  {
+body.content  {
     margin-top: 30px;
     padding-top: 30px;
     margin: 60px auto;
@@ -158,7 +156,7 @@ a.under1::before {
     word-spacing: 0.12em;
 }
 
-.code {
+body.code {
     color: #555;
     font-family: monospace;
 }
