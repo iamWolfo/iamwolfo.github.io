@@ -84,9 +84,16 @@ a.link1:hover:before {
   text-decoration: none;
 }
 
+a.hover1 {
+  text-decoration: none;
+  color: #18272F;
+  font-weight: 700;
+  position: relative;
+}
+
 a.hover1:before {
   content: '';
-  background-color: #18B7F2;
+  background-color: #4ebeef;
   position: absolute;
   left: 0;
   bottom: 3px;
@@ -102,28 +109,45 @@ a.hover1:hover:before {
 }
 
 a.under1 {
-  text-decoration: none;
-  color: #0074D9;
-}
-
-a.under1:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
-  text-decoration: none;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  a.under1:hover:before {
-    left: 0;
-    right: auto;
-    width: 100%;
+    color: #0000004b;
+    font-size: 1.3rem;
     text-decoration: none;
-  }
+    margin-top: 1em;
+    display: inline-block;
+    font-weight: bold;
+    padding: .5em;
+    margin-left: -.5em;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+    &:before, &:after {
+        position: absolute;
+        content: '';
+        border-bottom: 3px solid #1e81eb;
+        border-radius: 1em;
+        bottom: .3em;
+        transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    &:before {
+        width: 1em;
+        transform-origin: left;
+    }
+
+    &:after {
+        width: 82%;
+        left: 1em;
+        transform: translateX(110%);
+    }
+
+    &:hover:before {
+        transform: scaleX(0.3);
+    }
+
+    &:hover:after {
+        transform: translateX(0);
+    }
+
 }
 
 .navbar {
