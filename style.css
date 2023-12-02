@@ -190,6 +190,11 @@ a.hover2:hover:before {
     text-decoration: none;
 }
 
+.navbtn:hover {
+  color: #1fb4f4;
+  text-decoration: none;
+}
+
 .navbtnlink {
     display: block;
     margin: 1em;
